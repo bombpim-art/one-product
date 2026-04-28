@@ -64,13 +64,20 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+.product-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .product-image {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #f0f0f0;
     border-radius: 8px;
-    min-height: 400px;
+    min-height: 300px;
+    width: 100%;
 }
 
 .product-image img {
@@ -80,7 +87,7 @@ body {
 }
 
 .product-info h1 {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 15px;
     color: #222;
 }
@@ -141,7 +148,8 @@ body {
 }
 
 .stock-section {
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    padding: 0 10px;
 }
 
 .stock-label {
