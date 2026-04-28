@@ -29,24 +29,24 @@
                 <!-- Stock Section -->
                 <div class="stock-section">
                     <div class="stock-label">
-                        <span>Stock (88/100)</span>
+                        <span>Stock: 88%</span>
                     </div>
-                    <div class="stock-bar">
-                        <div class="stock-fill" style="width: 88%;"></div>
-                    </div>
+                    <progress class="stock-progress" value="88" max="100"></progress>
                 </div>
 
                 <!-- Rating Section -->
                 <div class="ratings-section">
-                    <h3>Rating Product</h3>
-                    <div class="rating-options">
-                        <button class="rating-btn">1</button>
-                        <button class="rating-btn">2</button>
-                        <button class="rating-btn">3</button>
-                        <button class="rating-btn">4</button>
-                        <button class="rating-btn">5</button>
+                    <div class="rating-container">
+                        <label>Rate this product:</label>
+                        <div class="rating-options">
+                            <label><input type="radio" name="rating" value="1"> 1</label>
+                            <label><input type="radio" name="rating" value="2"> 2</label>
+                            <label><input type="radio" name="rating" value="3"> 3</label>
+                            <label><input type="radio" name="rating" value="4"> 4</label>
+                            <label><input type="radio" name="rating" value="5"> 5</label>
+                            <button class="btn-submit-rating">Submit</button>
+                        </div>
                     </div>
-                    <button class="btn-submit-rating">Submit Rating</button>
                 </div>
 
                 <!-- Reviews Section -->
@@ -128,9 +128,6 @@
                         <span class="spec-value">Ships in 1 month</span>
                     </div>
                 </div>
-
-                
-                
             </div>
         </div>
     </div>

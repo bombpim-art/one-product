@@ -122,7 +122,7 @@ body {
 }
 
 .quantity-input {
-    width: 60px;
+    width: 100%;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -140,7 +140,6 @@ body {
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 30px;
-    width: 100%;
 }
 
 .btn-add-cart:hover {
@@ -160,16 +159,27 @@ body {
     font-weight: 500;
 }
 
-.stock-bar {
+.stock-progress {
     width: 100%;
-    height: 6px;
+    height: 10px;
+    border: none;
+    border-radius: 3px;
+    background: #e0e0e0;
+    overflow: hidden;
+}
+
+.stock-progress::-webkit-progress-bar {
     background: #e0e0e0;
     border-radius: 3px;
     overflow: hidden;
 }
 
-.stock-fill {
-    height: 100%;
+.stock-progress::-webkit-progress-value {
+    background: #0066ff;
+    border-radius: 3px;
+}
+
+.stock-progress::-moz-progress-bar {
     background: #0066ff;
     border-radius: 3px;
 }
@@ -216,38 +226,41 @@ body {
     border-top: 1px solid #eee;
 }
 
-.ratings-section h3 {
+.rating-container label {
+    display: block;
     font-size: 16px;
-    margin-bottom: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 .rating-options {
     display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.rating-btn {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #ddd;
-    background: white;
-    border-radius: 4px;
+.rating-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 0;
     cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s;
 }
 
-.rating-btn:hover {
-    border-color: #0066ff;
-    color: #0066ff;
+.rating-options input[type="radio"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
 }
 
 .btn-submit-rating {
     background: #0066ff;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
     font-weight: 600;
@@ -296,21 +309,49 @@ body {
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .product-section {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 20px;
         padding: 20px;
     }
 
-    .header-menu {
-        display: none;
+    .product-left {
+        display: contents;
     }
 
     .product-image {
-        min-height: 300px;
+        order: 1;
+        min-height: 250px;
+    }
+
+    .stock-section {
+        order: 2;
+    }
+
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        order: 3;
     }
 
     .product-info h1 {
         font-size: 22px;
+    }
+
+    .specifications {
+        order: 4;
+    }
+
+    .ratings-section {
+        order: 5;
+    }
+
+    .reviews-section {
+        order: 6;
+    }
+
+    .header-menu {
+        display: none;
     }
 
     .price {
@@ -320,5 +361,9 @@ body {
     .container {
         margin: 10px auto;
         padding: 0 15px;
+    }
+
+    .btn-add-cart {
+        width: 100%;
     }
 }

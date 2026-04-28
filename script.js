@@ -5,19 +5,10 @@ document.querySelector('.btn-add-cart').addEventListener('click', function() {
 });
 
 
-document.querySelectorAll('.rating-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-        document.querySelectorAll('.rating-btn').forEach(b => b.style.borderColor = '#ddd');
-        this.style.borderColor = '#0066ff';
-        this.style.color = '#0066ff';
-    });
-});
-
-
 document.querySelector('.btn-submit-rating').addEventListener('click', function() {
-    const selectedRating = document.querySelector('.rating-btn[style*="0066ff"]');
+    const selectedRating = document.querySelector('input[name="rating"]:checked');
     if (selectedRating) {
-        alert(`Thank you for rating: ${selectedRating.textContent} stars!`);
+        alert(`Thank you for rating: ${selectedRating.value} stars!`);
     } else {
         alert('Please select a rating first!');
     }
