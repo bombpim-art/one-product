@@ -19,6 +19,11 @@ document.querySelector('.quantity-input').addEventListener('change', function() 
     if (this.value < 1) this.value = 1;
 });
 
+function toggleMenu() {
+    const menu = document.querySelector('.header-menu');
+    menu.classList.toggle('open');
+}
+
 
 
 
