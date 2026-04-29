@@ -411,6 +411,7 @@ body {
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 999;
+    
   }
 
   .header-menu li {
@@ -428,6 +429,7 @@ body {
 
   .hamberger {
     display: flex;
+  margin-left: auto;
   }
 
   .price {
