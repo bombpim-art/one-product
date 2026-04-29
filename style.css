@@ -205,7 +205,7 @@ body {
 
 .spec-item {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     padding: 8px 0;
     font-size: 14px;
     border-bottom: 1px solid #f0f0f0;
@@ -364,7 +364,7 @@ body {
     }
 
     .btn-add-cart {
-        width: 100%;
+        width: 40%;
     }
 }
 
