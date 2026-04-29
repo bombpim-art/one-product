@@ -18,3 +18,7 @@ document.querySelector('.btn-submit-rating').addEventListener('click', function(
 document.querySelector('.quantity-input').addEventListener('change', function() {
     if (this.value < 1) this.value = 1;
 });
+
+
+
+

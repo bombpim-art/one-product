@@ -1,137 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Annibale Colombo Bed - Shop</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Navigation Bar -->
     <header class="header">
-        <div class="header-logo">Shop</div>
-        <ul class="header-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#product">Product</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="header-logo">Shop</div>
+      <ul class="header-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </header>
-    
+
     <div class="container">
-        <div class="product-section">
-            <!-- Left Column: Image, Stock, Rating, and Reviews -->
-            <div class="product-left">
-                <!-- Product Image -->
-                <div class="product-image">
-                    <img src="https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp" alt="Annibale Colombo Bed">
-                </div>
+      <div class="product-section">
+        <!-- Left Column: Image, Stock, Rating, and Reviews -->
+        <div class="product-left">
+          <!-- Product Image -->
+          <div class="product-image">
+            <img
+              src="https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp"
+              alt="Annibale Colombo Bed"
+            />
+          </div>
 
-                <!-- Stock Section -->
-                <div class="stock-section">
-                    <div class="stock-label">
-                        <span>Stock: (88/100)</span>
-                    </div>
-                    <progress class="stock-progress " value="88" max="100" ></progress>
-                </div>
+          <!-- Stock Section -->
+          <div class="stock-section">
+            <div class="stock-label">
+              <span>Stock: (88/100)</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+              <div class="progress-text">88%</div>
+            </div>
+          </div>
 
-                <!-- Rating Section -->
-                <div class="ratings-section">
-                    <div class="rating-container">
-                        <label>Rate this product:</label>
-                        <div class="rating-options">
-                            <label><input type="radio" name="rating" value="1"> 1</label>
-                            <label><input type="radio" name="rating" value="2"> 2</label>
-                            <label><input type="radio" name="rating" value="3"> 3</label>
-                            <label><input type="radio" name="rating" value="4"> 4</label>
-                            <label><input type="radio" name="rating" value="5"> 5</label>
-                            <button class="btn-submit-rating">Submit Rating</button>
-                        </div>
-                    </div>
-                </div>
+          <!-- Rating Section -->
+          <div class="ratings-section">
+            <div class="rating-container">
+              <label>Rate this product:</label>
+              <div class="rating-options">
+                <label><input type="radio" name="rating" value="1" /> 1</label>
+                <label><input type="radio" name="rating" value="2" /> 2</label>
+                <label><input type="radio" name="rating" value="3" /> 3</label>
+                <label><input type="radio" name="rating" value="4" /> 4</label>
+                <label><input type="radio" name="rating" value="5" /> 5</label>
+                <button class="btn-submit-rating">Submit Rating</button>
+              </div>
+            </div>
+          </div>
 
-                <!-- Reviews Section -->
-                <div class="reviews-section">
-                    <h3>Reviews</h3>
-                    
-                    <div class="review">
-                        <div class="review-name">Christopher West</div>
-                        <div class="review-rating">⭐ 2 stars</div>
-                        <div class="review-comment">Would not recommend!</div>
-                    </div>
+          <!-- Reviews Section -->
+          <div class="reviews-section">
+            <h3>Reviews</h3>
 
-                    <div class="review">
-                        <div class="review-name">Vivian Carter</div>
-                        <div class="review-rating">⭐ 4 stars</div>
-                        <div class="review-comment">Highly impressed!</div>
-                    </div>
-
-                    <div class="review">
-                        <div class="review-name">Mason Wright</div>
-                        <div class="review-rating">⭐ 1 star</div>
-                        <div class="review-comment">Poor quality!</div>
-                    </div>
-                </div>
+            <div class="review">
+              <div class="review-name">Christopher West</div>
+              <div class="review-rating">⭐ 2 stars</div>
+              <div class="review-comment">Would not recommend!</div>
             </div>
 
-            <!-- Right Column: Product Info -->
-            <div class="product-info">
-                <h1>Annibale Colombo Bed</h1>
-                
-                <p class="product-description">
-                    The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.
-                </p>
-
-                <div class="price-section">
-                    <div class="price">Price: $1,899.99</div>
-                </div>
-
-                <div class="quantity-section">
-                    <label class="quantity-label">Quantity:</label>
-                    <input type="number" class="quantity-input" value="1" min="1">
-                </div>
-
-                <button class="btn-add-cart">Add to Cart</button>
-
-                <!-- Specifications -->
-                <div class="specifications">
-                    <h3>Specifications</h3>
-                    <div class="spec-item">
-                        <span class="spec-label">Brand:</span>
-                        <span class="spec-value">Annibale Colombo</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">SKU:</span>
-                        <span class="spec-value">FUR-ANN-ANN-011</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Weight:</span>
-                        <span class="spec-value">10 lbs</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Width:</span>
-                        <span class="spec-value">28.16 inches</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Height:</span>
-                        <span class="spec-value">25.36 inches</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Depth:</span>
-                        <span class="spec-value">17.28 inches</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Warranty:</span>
-                        <span class="spec-value">1 year warranty</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Shipping:</span>
-                        <span class="spec-value">Ships in 1 month</span>
-                    </div>
-                </div>
+            <div class="review">
+              <div class="review-name">Vivian Carter</div>
+              <div class="review-rating">⭐ 4 stars</div>
+              <div class="review-comment">Highly impressed!</div>
             </div>
+
+            <div class="review">
+              <div class="review-name">Mason Wright</div>
+              <div class="review-rating">⭐ 1 star</div>
+              <div class="review-comment">Poor quality!</div>
+            </div>
+          </div>
         </div>
+
+        <!-- Right Column: Product Info -->
+        <div class="product-info">
+          <h1>Annibale Colombo Bed</h1>
+
+          <p class="product-description">
+            The Annibale Colombo Bed is a luxurious and elegant bed frame,
+            crafted with high-quality materials for a comfortable and stylish
+            bedroom.
+          </p>
+
+          <div class="price-section">
+            <div class="price">Price: $1,899.99</div>
+          </div>
+
+          <div class="quantity-section">
+            <label class="quantity-label">Quantity:</label>
+            <input type="number" class="quantity-input" value="1" min="1" />
+          </div>
+
+          <button class="btn-add-cart">Add to Cart</button>
+
+          <!-- Specifications -->
+          <div class="specifications">
+            <h3>Specifications</h3>
+            <div class="spec-item">
+              <span class="spec-label">Brand:</span>
+              <span class="spec-value">Annibale Colombo</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">SKU:</span>
+              <span class="spec-value">FUR-ANN-ANN-011</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Weight:</span>
+              <span class="spec-value">10 lbs</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Width:</span>
+              <span class="spec-value">28.16 inches</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Height:</span>
+              <span class="spec-value">25.36 inches</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Depth:</span>
+              <span class="spec-value">17.28 inches</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Warranty:</span>
+              <span class="spec-value">1 year warranty</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Shipping:</span>
+              <span class="spec-value">Ships in 1 month</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
