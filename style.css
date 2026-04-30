@@ -228,7 +228,7 @@ body {
 
 .specifications {
   margin-top: 2px;
-  padding-top: 5px;
+  padding-top: 0px;
   margin-left: 5px;
   /* border-top: 1px solid #eee; */
 }
@@ -258,7 +258,7 @@ body {
 
 .ratings-section {
   margin-top: 15px;
-  padding-top: 15px;
+  padding-top: 0px;
   border-top: 1px solid #eee;
 }
 
@@ -309,8 +309,9 @@ body {
 
 .reviews-section {
   margin-top: 30px;
-  padding-top: 30px;
+  padding-top: 0px;
   border-top: 1px solid #eee;
+  
 }
 
 .reviews-section h3 {
@@ -449,26 +450,41 @@ body {
   }
 }
 
-/* .card {
-  border: 1px solid #ddd;       
-  border-radius: 4px;           
-  overflow: hidden;             
+.spec-card {
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
   font-family: sans-serif;
-  max-width: 600px;
-}
-
-.card-header {
-  background-color: #f8f8f8;    
-  padding: 10px 15px;           
-  border-bottom: 1px solid #ddd; 
-  font-size: 14px;
-  color: #333;
-}
-.card-body {
+  overflow: hidden; 
   background-color: #fff;
-  padding: 20px 15px;           
-  display: flex;
-  align-items: center;
-  gap: 10px;                    
-} */
+}
 
+/* ส่วนหัว (Header) */
+.spec-header {
+  padding: 12px 16px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 600;
+  color: #495057;
+  font-size: 16px;
+}
+
+/* รายการแต่ละแถว */
+.spec-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #212529;
+  font-size: 14px;
+}
+
+/* เอาเส้นขอบล่างของแถวสุดท้ายออก */
+.spec-item:last-child {
+  border-bottom: none;
+}
+
+.rating-item {
+  padding: 12px 16px;
+  padding-top: 4px;
+  font-size: 14px;
+}
