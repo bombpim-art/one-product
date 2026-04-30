@@ -228,8 +228,9 @@ body {
 
 .specifications {
   margin-top: 2px;
-  padding-top: 30px;
-  border-top: 1px solid #eee;
+  padding-top: 5px;
+  margin-left: 5px;
+  /* border-top: 1px solid #eee; */
 }
 
 .specifications h3 {
@@ -243,7 +244,7 @@ body {
   gap: 20px;
   padding: 8px 0;
   font-size: 14px;
-  border-bottom: 1px solid #f0f0f0;
+  /* border-bottom: 1px solid #f0f0f0; */
 }
 
 .spec-label {
@@ -447,3 +448,5 @@ body {
     width: 40%;
   }
 }
+
+
