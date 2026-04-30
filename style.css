@@ -71,6 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  
 }
 
 .product-image {
@@ -90,27 +91,27 @@ body {
 }
 
 .product-info h1 {
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
   color: #222;
 }
 
 .product-description {
   color: #666;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 14px;
 }
 
 .price-section {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .price {
-  font-size: 24px;
+  font-size: 10px;
   font-weight: bold;
   color: #222;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .quantity-section {
@@ -150,7 +151,7 @@ body {
 
 .stock-section {
   margin-bottom: 0;
-  padding: 0 10px;
+  padding: 20px 20px;
 }
 
 .stock-label {
@@ -226,7 +227,7 @@ body {
 }
 
 .specifications {
-  margin-top: 30px;
+  margin-top: 2px;
   padding-top: 30px;
   border-top: 1px solid #eee;
 }
@@ -255,8 +256,8 @@ body {
 }
 
 .ratings-section {
-  margin-top: 30px;
-  padding-top: 30px;
+  margin-top: 15px;
+  padding-top: 15px;
   border-top: 1px solid #eee;
 }
 
@@ -367,6 +368,7 @@ body {
 
   .product-left {
     display: contents;
+    
   }
 
   .product-image {
@@ -385,7 +387,7 @@ body {
   }
 
   .product-info h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .specifications {
@@ -433,7 +435,7 @@ body {
   }
 
   .price {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .container {
