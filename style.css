@@ -449,4 +449,26 @@ body {
   }
 }
 
+/* .card {
+  border: 1px solid #ddd;       
+  border-radius: 4px;           
+  overflow: hidden;             
+  font-family: sans-serif;
+  max-width: 600px;
+}
+
+.card-header {
+  background-color: #f8f8f8;    
+  padding: 10px 15px;           
+  border-bottom: 1px solid #ddd; 
+  font-size: 14px;
+  color: #333;
+}
+.card-body {
+  background-color: #fff;
+  padding: 20px 15px;           
+  display: flex;
+  align-items: center;
+  gap: 10px;                    
+} */
 
