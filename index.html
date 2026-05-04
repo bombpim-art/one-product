@@ -9,7 +9,7 @@
   <body>
     <!-- Navigation Bar -->
     <header class="header">
-      <div class="header-logo">Shop</div>
+      <div class="header-logo">Your Brand</div>
       <div class="hamberger" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -44,75 +44,33 @@
               <div class="progress-text">88%</div>
             </div>
           </div>
-
-          <!-- Rating Section -->
-          <div class="ratings-section spec-card">
-            
-            <div class="rating-container ">
-              <label class="spec-header">Rate this product:</label>
-              
-              <div class="rating-options rating-item">
-                <label><input type="radio" name="rating" value="1" /> 1</label>
-                <label><input type="radio" name="rating" value="2" /> 2</label>
-                <label><input type="radio" name="rating" value="3" /> 3</label>
-                <label><input type="radio" name="rating" value="4" /> 4</label>
-                <label><input type="radio" name="rating" value="5" /> 5</label>
-                <button class="btn-submit-rating">Submit Rating</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Reviews Section -->
-          <div class="reviews-section spec-card">
-            <h3 class="spec-header">Reviews</h3>
-
-            <div class="review spec-item">
-              <div class="review-name">Christopher West</div>
-              <div class="review-rating">⭐ 2 stars</div>
-              <div class="review-comment">Would not recommend!</div>
-            </div>
-
-            <div class="review spec-item">
-              <div class="review-name">Vivian Carter</div>
-              <div class="review-rating">⭐ 4 stars</div>
-              <div class="review-comment">Highly impressed!</div>
-            </div>
-
-            <div class="review spec-item">
-              <div class="review-name">Mason Wright</div>
-              <div class="review-rating">⭐ 1 star</div>
-              <div class="review-comment">Poor quality!</div>
-            </div>
-          </div>
         </div>
-
         <!-- Right Column: Product Info -->
-         
         <div class="product-info">
-          <h1>Annibale Colombo Bed</h1>
+          <div class="product-card specifications">
+            <h3 class="spec-header">Annibale Colombo Bed</h3>
+            <div style="padding: 15px">
+              <p class="product-description">
+                The Annibale Colombo Bed is a luxurious and elegant bed frame,
+                crafted with high-quality materials for a comfortable and
+                stylish bedroom.
+              </p>
 
-          <p class="product-description">
-            The Annibale Colombo Bed is a luxurious and elegant bed frame,
-            crafted with high-quality materials for a comfortable and stylish
-            bedroom.
-          </p>
+              <div class="price-section">
+                <div class="price">Price: $1,899.99</div>
+              </div>
 
-          <div class="price-section">
-            <div class="price">Price: $1,899.99</div>
+              <div class="quantity-section">
+                <label class="quantity-label">Quantity:</label>
+                <input type="text" class="quantity-input" value="1" min="1" />
+              </div>
+
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
           </div>
-
-          <div class="quantity-section">
-            <label class="quantity-label">Quantity:</label>
-            <input type="text" class="quantity-input" value="1" min="1" />
-          </div>
-
-          <button class="btn-add-cart">Add to Cart</button>
-          
-
-          
 
           <!-- Specifications -->
-               
+
           <div class="specifications spec-card">
             <h3 class="spec-header">Specifications</h3>
             <div class="spec-item">
@@ -139,14 +97,49 @@
               <span class="spec-label">Depth:</span>
               <span class="spec-value">17.28 inches</span>
             </div>
-              </div>
-            
-            
-          
+          </div>
         </div>
       </div>
-    </div>
 
+        <div class="ratings-section spec-card3">
+          <div class="rating-container">
+            <label class="spec-header">Rate this product:</label>
+
+            <div class="rating-options rating-item">
+              <label><input type="radio" name="rating" value="1" /> 1</label>
+              <label><input type="radio" name="rating" value="2" /> 2</label>
+              <label><input type="radio" name="rating" value="3" /> 3</label>
+              <label><input type="radio" name="rating" value="4" /> 4</label>
+              <label><input type="radio" name="rating" value="5" /> 5</label>
+              <button class="btn-submit-rating">Submit Rating</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews-section spec-card3">
+          <h3 class="spec-header">Reviews</h3>
+
+          <div class="review spec-item">
+            <div class="review-name">Christopher West</div>
+            <div class="review-rating">⭐ 2 stars</div>
+            <div class="review-comment">Would not recommend!</div>
+          </div>
+
+          <div class="review spec-item">
+            <div class="review-name">Vivian Carter</div>
+            <div class="review-rating">⭐ 4 stars</div>
+            <div class="review-comment">Highly impressed!</div>
+          </div>
+
+          <div class="review spec-item">
+            <div class="review-name">Mason Wright</div>
+            <div class="review-rating">⭐ 1 star</div>
+            <div class="review-comment">Poor quality!</div>
+          </div>
+        </div>
+      <!-- Rating Section -->
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

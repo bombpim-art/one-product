@@ -8,13 +8,13 @@ body {
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell, sans-serif;
-  background-color: #f5f5f5;
+  background-color: white;
   color: #333;
 }
 
 .header {
   position: relative;
-  background: white;
+  background: #f8f8f8;
   padding: 15px 20px;
   display: flex;
   gap: 30px;
@@ -31,6 +31,7 @@ body {
   display: flex;
   gap: 20px;
   list-style: none;
+
 }
 
 .header-menu a {
@@ -61,17 +62,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  background: white;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-left {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
 }
 
 .product-image {
@@ -80,7 +76,7 @@ body {
   align-items: center;
   background: #f0f0f0;
   border-radius: 8px;
-  min-height: 450px;
+  min-height: 530px;
   width: 100%;
 }
 
@@ -262,6 +258,11 @@ body {
   border-top: 1px solid #eee;
 }
 
+.ratings-section2 {
+  background: white;
+  padding: 40px;
+}
+
 .rating-container label {
   display: block;
   font-size: 16px;
@@ -311,7 +312,6 @@ body {
   margin-top: 30px;
   padding-top: 0px;
   border-top: 1px solid #eee;
-  
 }
 
 .reviews-section h3 {
@@ -365,12 +365,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
   }
 
   .product-left {
     display: contents;
-    
   }
 
   .product-image {
@@ -415,7 +413,6 @@ body {
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 999;
-    
   }
 
   .header-menu li {
@@ -433,7 +430,7 @@ body {
 
   .hamberger {
     display: flex;
-  margin-left: auto;
+    margin-left: auto;
   }
 
   .price {
@@ -451,12 +448,33 @@ body {
 }
 
 .spec-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: sans-serif;
+  overflow: hidden;
+  background-color: #fff;
+}
+.spec-card1 {
   width: 100%;
   max-width: 700px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   font-family: sans-serif;
-  overflow: hidden; 
+  overflow: hidden;
+  background-color: #fff;
+}
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: sans-serif;
+  overflow: hidden;
+  background-color: #fff;
+}
+.spec-card3 {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: sans-serif;
+  overflow: hidden;
   background-color: #fff;
 }
 
